@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="main">
+                    <input type="text" name="vlu">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="vlu.value =''">
+                    <input type="button" value="DE" onclick="vlu.value= vlu.value.toString().slice(0,-1)">
+                    <input type="button" value="." onclick="vlu.value+='.'">
+                    <input type="button" value="/" onclick="vlu.value+='/'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="vlu.value+='7'">
+                    <input type="button" value="8" onclick="vlu.value+='8'">
+                    <input type="button" value="9" onclick="vlu.value+='9'">
+                    <input type="button" value="*" onclick="vlu.value+='*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="vlu.value+='4'">
+                    <input type="button" value="5" onclick="vlu.value+='5'">
+                    <input type="button" value="6" onclick="vlu.value+='6'">
+                    <input type="button" value="-" onclick="vlu.value+='-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="vlu.value+='1'">
+                    <input type="button" value="2" onclick="vlu.value+='2'">
+                    <input type="button" value="3" onclick="vlu.value+='3'">
+                    <input type="button" value="+" onclick="vlu.value+='+'">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="vlu.value+='00'">
+                    <input type="button" value="0" onclick="vlu.value+='0'">
+                    <input type="button" value="=" class="eql" onclick="vlu.value=eval(vlu.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
